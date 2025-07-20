@@ -1,0 +1,12 @@
+#map {
+    height: 100vh;
+    
+}
+.fade-marker {
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+  }
+
+.fade-marker.visible {
+    opacity: 1;
+  }
