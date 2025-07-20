@@ -12,7 +12,7 @@ map.setMaxBounds([
 ]);
 
 const icon1 = L.icon({
-  iconUrl: 'warli-icon.png',
+  iconUrl: 'mapimages/warli-icon.png',
   iconSize: [32, 32]
 })
 
