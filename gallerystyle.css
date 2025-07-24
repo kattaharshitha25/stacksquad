@@ -15,12 +15,15 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top:0;
+      z-index: 1000;
     }
 
     .nav-links {
       display: flex;
-      gap: 20px;
-      margin-left: 20cm;
+      gap: 1cm;
+      margin-left: 9cm;
     }
 
     .nav-links a {
@@ -53,6 +56,21 @@ header {
       font-size: 20px;
       font-style: italic;
     }
+
+#main-logo {
+  opacity: 1;
+  transition: all 0.2s ease; 
+}
+
+#main-logo.sticky-logo {
+  position: fixed;
+  top: 10px;
+  left: 25px;
+  font-size: 20px;
+  color: white;
+  background:  #9c4d0c00;
+  z-index: 1001;
+}
 
 
 :root {

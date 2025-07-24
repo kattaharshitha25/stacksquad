@@ -50,3 +50,14 @@ function validateAndSubmit() {
     closeForm();
   }
 }
+
+  const logo = document.getElementById("main-logo");
+  const offsetTrigger = logo.offsetTop + 50;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > offsetTrigger) {
+      logo.classList.add("sticky-logo");
+    } else {
+      logo.classList.remove("sticky-logo");
+    }
+  });
