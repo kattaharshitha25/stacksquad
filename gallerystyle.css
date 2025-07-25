@@ -312,7 +312,7 @@ body{
   transform: scale(1.03);
 }
 .container3 {
-    background-image: url("images/gbg3.png");
+    background-image: url("galleryimages/gbg.png");
 
     height: 60vh;
     display: flex;
