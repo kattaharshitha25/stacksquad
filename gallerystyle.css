@@ -47,7 +47,6 @@ header {
 
     h1 {
       color: #9c4d0c;
-      font-size: 48px;
       margin-bottom: 10px;
     }
 
@@ -74,7 +73,7 @@ header {
 
 
 :root {
-    --primary: #ec994b;
+    --primary: #9c4d0c;
     --white: #ffffff;
     --bg:#f5f5f5;
 }
@@ -121,7 +120,7 @@ html{
   justify-content: space-between;
 }*/
 body{
-    background-color: rgb(252, 210, 158);
+    background: linear-gradient(to right, #f9994f, #feb47b);
 }
 .container{
     max-width:124rem;
@@ -130,7 +129,7 @@ body{
 }
 .text-center{
     text-align: center;
-    font-size: 35px;
+    font-size: 13px;
 }
 .section-heading{
     font-size:3rem;
@@ -328,4 +327,67 @@ body{
 }
 .tranding-slide:hover {
   transform: scale(1.03);
+}
+.container3 {
+    background-image: url("galleryimages/gbg3.png");
+
+    height: 60vh;
+    display: flex;
+    justify-content:center; /* center everything again */
+    overflow: hidden;
+    perspective: 1000px;
+    padding: 1rem 0;
+}
+
+.carousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+.sculpture-heading {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 50px;
+}
+
+.slider2{
+    position: relative;
+    width:150px;
+    height:150px;
+    transform-style:preserve-3d;
+    animation:rotate 30s linear infinite;
+}
+@keyframes rotate{
+    0% {
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.slider2 span{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform:rotateY(calc(var(--i)*45deg)) translateZ(300px);
+}
+.slider2 span img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    border-radius: 60px;
+    object-fit: cover;
+    transition:2s;
+}
+.slider2 span:hover img{
+    transform:translateY(-50px) scale(1.2);
 }
