@@ -330,7 +330,7 @@
 
 
     .css-slider-section {
-  background: #fff7f1;
+  background: white;
   padding: 20px 50px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
@@ -357,7 +357,7 @@
   animation: slideFade 12s infinite;
   padding: 20px 30px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  background: white;
+  background: #f6e3d5;
   border-radius: 15px;
 }
 
