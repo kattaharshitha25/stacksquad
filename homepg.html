@@ -4,351 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RangVirasat</title>
-  <link rel="stylesheet" href="homepgcss.css">
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header.hero-section {
-      height: 100vh;
-      background-color: #f7931e; /* bright orange */
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-    }
-
-    header.hero-section h1 {
-      font-size: 4rem;
-      margin: 0;
-    }
-
-    nav.navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: white;
-      padding: 10px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: center;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .content-section {
-      background-color: white;
-      padding: 50px 20px;
-    }
-
-    .content-section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-.transition {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.transition.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* spacing between cards */
-  background-color: #fdf6e3; /* creamish */
-  width: 100%;
-  max-width: fit-content;
-}
-
-
-.image-card {
-  display: flex;
-  justify-content: center;  /* centers horizontally */
-  align-items: center;      /* centers vertically */
-  height: 250px;            /* set a height for centering to work */
-  padding: 14px;
-  border: 1px solid #ccc;
-  background-color: #fdf6e3; /* creamish */
-  box-sizing: border-box;
-}
-
-
-.image-card img {
-  max-width: 350px;
-  max-height: 300px;
-  object-fit: contain;  /* keeps aspect ratio */
-}
-
-
-/* Hover Overlay */
-.info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: all 0.4s ease;
-  text-align: center;
-  padding: 15px;
-}
-
-.image-card:hover .info {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.info h4 {
-  margin-bottom: 8px;
-  font-size: 18px;
-  color: #f3f2ef;
-}
-
-.info p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.buttons button {
-  background-color: #ffa94d;
-  color: #000;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.buttons button:hover {
-  background-color: #ffc078;
-}
-
-/* Expanded Overlay Panel */
-.expanded-overlay {
-  display: none;
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75vw;
-  max-width: 900px;
-   background-color: rgba(0, 0, 0, 0.85);
-   color: white;
-  padding: 30px;
-  z-index: 1000;
-  box-shadow: 0 0 20px rgba(0,0,0,0.25);
-  border-radius: 10px;
-}
-
-.overlay-content h3 {
-  margin-bottom: 10px;
-  color: #d27921;
-}
-
-.overlay-content p {
-  margin-bottom: 30px;
-  font-size: 16px;
-}
-
-.overlay-content button {
-  background-color: #9c4d0c;
-  color: white;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.overlay-content button:hover {
-  background-color: #d17d33;
-}
-
-.features-section {
-  background-color: #4e2c1e; /* deep brown */
-  color: #fff;
-  padding: 80px 40px;
-  text-align: center;
-  max-width: fit-content;
-}
-
-.features-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #f5deb3; /* wheat/golden for contrast */
-}
-
-.features-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.feature-link {
-  text-decoration: none;
-  color: inherit;
-  width: 250px;
-}
-
-.feature-box {
-  background-color: #fdf6e3; /* light cream */
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-}
-
-.feature-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.feature-icon {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.feature-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #3e1f0f;
-}
-
-.feature-desc {
-  font-size: 0.95rem;
-  color: #3e1f0f;
-}
-
-@media (max-width: 768px) {
-  .feature-link {
-    width: 100%;
-    max-width: 320px;
-  }
-}
-
- .css-slider-section {
-  background:white;
-  padding: 20px 200px;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  width: 100%;
-}
-
-.css-slider-title {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #222;
-}
-
-.slider-wrapper {
-  position: relative;
-  margin: 10px;
-  height: 200px;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  animation: slideFade 12s infinite;
-  padding: 30px 50px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  background: #f6e3d5;
-  border-radius: 15px;
-}
-
-.slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 4s; }
-.slide:nth-child(3) { animation-delay: 8s; }
-
-@keyframes slideFade {
-  0% { opacity: 0; transform: translateY(20px); }
-  8% { opacity: 1; transform: translateY(0); }
-  25% { opacity: 1; }
-  33.33% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 0; }
-}
-
-.quote {
-  font-size: 18px;
-  color: #444;
-  font-style: italic;
-  line-height: 1.6;
-}
-
-.author {
-  font-weight: 600;
-  color: #1a1a1a;
-}
-
-    footer {
-      background-color: #f5eee0;
-      color: #444;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 14px;
-      border-top: 2px solid #d2b48c;
-    }
-
-    footer a {
-      color: #9c4d0c;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .features-section,
-.css-slider-section,
-.image-gallery {
-  width: 100%;
-}
-
-
-</style>
+   <link rel="stylesheet" href="homepgcss.css" >
 </head>
 <body>
 
@@ -658,21 +314,34 @@
   </div>
 </section>
 
-<footer>
-    <strong>Quick Links:</strong> 
-      <a href="#">Contact</a> | 
-      <a href="#">Privacy Policy</a>|
-      <a href="#">Feedback Form</a>
-    </p>
-    <p>
-      <strong>Follow us:</strong> 
-      <a href="#">Instagram</a> | 
-      <a href="#">YouTube</a> | 
-      <a href="#">LinkedIn</a>
-    </p>
-   
-    <p style="margin: 0px 8.5cm;">© 2025 RangVirasat. Crafted with love for India’s cultural future.</p>
+<footer class="custom-footer">
+  <div class="footer-left">
+    <h2>RangVirasat</h2>
+    <p>Preserving India’s rich artistic traditions and connecting artisans to a modern audience.We aim to bridge the gap between heritage and innovation through curated experiences.
+Every piece you explore helps sustain the legacy of India’s master artisans.</p>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+
+    <p class="social-links">
+  <strong>Follow us:</strong>
+  <a href="#">Instagram</a><br>
+  <a href="#">YouTube</a><br>
+  <a href="#">LinkedIn</a>
+</p>
+
+  </div>
 </footer>
+
 
 <script>
   window.addEventListener("load", () => {

@@ -143,3 +143,114 @@ marker23.addTo(map);
 marker26.addTo(map);
 marker28.addTo(map);
 
+marker1.bindPopup(`
+  <strong>State:</strong> Andhra Pradesh<br>
+  <strong>Famous Art:</strong> Kalamkari<br>
+  <strong>Famous Artist:</strong> Jonnalagadda Gurappa Chetty<br>
+  <strong>Famous Museum:</strong> Salar Jung Museum, Hyderabad
+`);
+
+marker2.bindPopup(`
+  <strong>State:</strong> Arunachal Pradesh<br>
+  <strong>Famous Art:</strong> Monpa wood carving and Thangka painting<br>
+  <strong>Famous Artist:</strong> Padmashree Tsering Norbu<br>
+  <strong>Famous Museum:</strong> Jawaharlal Nehru State Museum, Itanagar
+`);
+
+marker3.bindPopup(`
+  <strong>State:</strong> Assam<br>
+  <strong>Famous Art:</strong> Toy and mask making of Majuli<br>
+  <strong>Famous Artist:</strong> Hem Chandra Goswami<br>
+  <strong>Famous Museum:</strong> Assam State Museum, Guwahati
+`);
+
+marker4.bindPopup(`
+  <strong>State:</strong> Bihar<br>
+  <strong>Famous Art:</strong> Madhubani Painting<br>
+  <strong>Famous Artist:</strong> Sita Devi<br>
+  <strong>Famous Museum:</strong> Bihar Museum, Patna
+`);
+
+marker7.bindPopup(`
+  <strong>State:</strong> Gujarat<br>
+  <strong>Famous Art:</strong> Clay Dolls of Kutch<br>
+  <strong>Famous Artist:</strong> Haribhai Kumbhar<br>
+  <strong>Famous Museum:</strong> Kutch Museum, Bhuj
+`);
+
+marker9.bindPopup(`
+  <strong>State:</strong> Jammu & Kashmir<br>
+  <strong>Famous Art:</strong> Papier-mâché and Sozni embroidery<br>
+  <strong>Famous Artist:</strong> Ghulam Rasool Khan<br>
+  <strong>Famous Museum:</strong> SPS Museum, Srinagar
+`);
+
+marker11.bindPopup(`
+  <strong>State:</strong> Karnataka<br>
+  <strong>Famous Art:</strong> Chitrakathi and Leather Puppetry<br>
+  <strong>Famous Artist:</strong> K.V. Raghavaiah<br>
+  <strong>Famous Museum:</strong> Government Museum, Bengaluru
+`);
+
+marker13.bindPopup(`
+  <strong>State:</strong> Madhya Pradesh<br>
+  <strong>Famous Art:</strong> Gond Painting<br>
+  <strong>Famous Artist:</strong> Jangarh Singh Shyam<br>
+  <strong>Famous Museum:</strong> Bharat Bhavan, Bhopal
+`);
+
+marker14.bindPopup(`
+  <strong>State:</strong> Maharashtra<br>
+  <strong>Famous Art:</strong> Warli Painting<br>
+  <strong>Famous Artist:</strong> Jivya Soma Mashe<br>
+  <strong>Famous Museum:</strong> Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, Mumbai
+`);
+
+marker15.bindPopup(`
+  <strong>State:</strong> Manipur<br>
+  <strong>Famous Art:</strong> Manipuri Doll-making and Textiles<br>
+  <strong>Famous Artist:</strong> Lourembam Tombi<br>
+  <strong>Famous Museum:</strong> Manipur State Museum, Imphal
+`);
+
+marker19.bindPopup(`
+  <strong>State:</strong> Odisha<br>
+  <strong>Famous Art:</strong> Pattachitra<br>
+  <strong>Famous Artist:</strong> Ananta Maharana<br>
+  <strong>Famous Museum:</strong> Odisha State Museum, Bhubaneswar
+`);
+
+marker20.bindPopup(`
+  <strong>State:</strong> Punjab<br>
+  <strong>Famous Art:</strong> Phulkari<br>
+  <strong>Famous Artist:</strong> Harnam Kaur<br>
+  <strong>Famous Museum:</strong> Virasat-e-Khalsa, Anandpur Sahib
+`);
+
+marker21.bindPopup(`
+  <strong>State:</strong> Rajasthan<br>
+  <strong>Famous Art:</strong> Phad Painting<br>
+  <strong>Famous Artist:</strong> Shree Lal Joshi<br>
+  <strong>Famous Museum:</strong> Albert Hall Museum, Jaipur
+`);
+
+marker23.bindPopup(`
+  <strong>State:</strong> Tamil Nadu<br>
+  <strong>Famous Art:</strong> Tanjore Painting and Chola Bronzes<br>
+  <strong>Famous Artist:</strong> M. Singaravelu<br>
+  <strong>Famous Museum:</strong> Government Museum, Chennai
+`);
+
+marker26.bindPopup(`
+  <strong>State:</strong> Uttar Pradesh<br>
+  <strong>Famous Art:</strong> Sanjhi Art<br>
+  <strong>Famous Artist:</strong> Ram Soni<br>
+  <strong>Famous Museum:</strong> Bharat Kala Bhavan, Varanasi
+`);
+
+marker28.bindPopup(`
+  <strong>State:</strong> West Bengal<br>
+  <strong>Famous Art:</strong> Kalighat Painting<br>
+  <strong>Famous Artist:</strong> Jamini Roy<br>
+  <strong>Famous Museum:</strong> Indian Museum, Kolkata
+`);
