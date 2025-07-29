@@ -1,0 +1,51 @@
+#map {
+    height: 100vh;
+    
+}
+.fade-marker {
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+  }
+
+.fade-marker.visible {
+    opacity: 1;
+  }
+
+   nav.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgb(142, 60, 1);
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fefefe;
+      font-weight: bold;
+      margin: 0.1cm 0.8cm;
+    }
+
+#main-logo {
+  opacity: 1;
+  transition: all 0.2s ease; 
+}
+
+#main-logo.sticky-logo {
+  position: fixed;
+  top: 10px;
+  left: 25px;
+  font-size: 20px;
+  color: white;
+  background:  #9c4d0c00;
+  z-index: 1001;
+}
+
+

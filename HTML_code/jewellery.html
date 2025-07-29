@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Decor – RangVirasat</title>
+  <link rel="stylesheet" href="jewellerycss.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1 id="main-logo">RangVirasat</h1>
+    <h5>Celebrating India's Heritage Through Art</h5>
+  </header>
+
+   <nav class="navbar">
+  <div class="nav-links">
+    <a href="homepg.html">Home</a>
+    <a href="map.html">Map</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="store.html">Store</a>
+    <a href="learn.html">Learn</a>
+    <a href="code.html">Events</a>
+    <a href="tour.html">Blog</a>
+  </div>
+
+  <!-- 🛒 Cart icon inside navbar -->
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</nav>
+
+<!-- 🛒 Slide-out cart panel (placed outside nav) -->
+<div class="cart-panel" id="cart-panel">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <p class="total">Total: ₹<span id="cart-total">0</span></p>
+  <button class="checkout-btn" onclick="checkout()">Checkout</button>
+</div>
+
+
+  <h1 class="head">Accessories</h1>
+  <section class="masonry">
+    <div class="masonry-item">
+      <img src="accessory images/image1.webp" alt="Masala Box">
+      <div class="item-info">
+        <h3>Antique Finish Oxidised German Silver Juda Stick</h3>
+        <p>₹120 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Juda Stick', 120)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image2.jpg" alt="table cloth">
+      <div class="item-info">
+        <h3>Hand Carved Sheesham Wood Comb </h3>
+        <p>₹300 • Kashmir</p>
+        <button class="cart-btn" onclick="addToCart('Wodden Comb', 300)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image3.webp" alt="S&P shakers">
+      <div class="item-info">
+        <h3>Handmade Gulmohar Flower Wooden Juda Stick</h3>
+        <p>₹200 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Wodden Juda Stick', 200)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image4.webp" alt="Spice Hanging Set">
+      <div class="item-info">
+        <h3>Handmade Beadwork Latkan /Tassels for Clothing</h3>
+        <p>₹157 • Jharkand</p>
+        <button class="cart-btn" onclick="addToCart('Tassels', 157)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image7.webp" alt="Casserole">
+      <div class="item-info">
+        <h3>Floral Print Multipurpose Measuring Tape</h3>
+        <p>₹299 • Bihar</p>
+        <button class="cart-btn" onclick="addToCart('Measuring Tape', 299)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image6.webp" alt="Tray">
+      <div class="item-info">
+        <h3>Handmade Beadwork Latkan /Tassels for Clothing</h3>
+        <p>₹290 • Tamil Nadu</p>
+        <button class="cart-btn" onclick="addToCart('Tassels', 290)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image8.webp" alt="Set">
+      <div class="item-info">
+        <h3>1.4cm Handmade Fabric Button Small (Set Of 12)</h3>
+        <p>₹350 • Bihar</p>
+        <button class="cart-btn" onclick="addToCart('Buttons', 350)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image9.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>Roli Chawal Box- Hand Painted Home Decor</h3>
+        <p>₹450 • Tamil Nadu</p>
+        <button class="cart-btn" onclick="addToCart('Kunkum Box', 450)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image10.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Handmade Gulmohar Flower Wooden Juda Stick</h3>
+        <p>₹400 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Juda Stick', 400)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image11.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Handpainted Wooden Roli Chawal Dibbi</h3>
+        <p>₹898 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kunkum Box', 898)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image12.jpg" alt="Cups set">
+      <div class="item-info">
+        <h3>Green - Handmade Cotton Bandana</h3>
+        <p>₹300 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Hand Cloth', 300)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="accessory images/image13.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Handmade Cotton Elastic Headband</h3>
+        <p>₹350 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Hair Band', 350)">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+
+   <script src="cart.js"></script>
+
+</body>
+</html>
+
