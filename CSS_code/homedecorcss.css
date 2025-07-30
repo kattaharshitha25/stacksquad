@@ -13,34 +13,10 @@ body {
   background-color: #fff0e1;
 }
 
-.header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.header p {
-  font-size: 16px;
-  color: #666;
-}
-
-#main-logo {
-  opacity: 1;
-  transition: all 0.2s ease; 
-}
-
-#main-logo.sticky-logo {
-  position: fixed;
-  top: 10px;
-  left: 25px;
-  font-size: 20px;
-  color: white;
-  background:  #9c4d0c00;
-  z-index: 1001;
-}
 
 nav {
   background-color: #9c4d0c;
-  padding: 10px 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,13 +28,14 @@ nav {
 .nav-links {
   display: flex;
   gap: 1cm;
-  margin-left: 9cm;
+  margin-left: 8cm;
 }
 
 .nav-links a {
   color: #fffdf8;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 650;
   transition: color 0.3s;
 }
 
@@ -117,6 +94,7 @@ nav {
 /* Masonry Layout */
 .head{
     text-align: center;
+    font-size: 40px;
 }
 
 .masonry {

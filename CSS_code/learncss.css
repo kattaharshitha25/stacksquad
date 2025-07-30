@@ -1,0 +1,283 @@
+
+
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0.1cm 0.8cm;
+    }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f3ef;
+  color: #3e1f0f;
+}
+
+.half-page-section {
+  display: flex;
+  height: 20cm;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.text-side {
+  width: 50%;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-side h1 {
+  font-size: 36px;
+  color: #a0522d;
+  margin-bottom: 20px;
+}
+
+.text-side p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.image-side {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.image-side .img1 {
+  width: 7cm;
+  height: 9cm;
+  margin-top: -5cm;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-side .img2 {
+  width: 8cm;
+  height: 6cm;
+  margin-top: 2cm;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-side .img3 {
+  width: 13cm;
+  height: 6cm;
+  margin-top: 15cm;
+  margin-left: -12.5cm;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .half-page-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text-side,
+  .image-side {
+    width: 100%;
+  }
+
+  .image-side {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image-side img {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+
+
+.learn-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff2e6;
+  padding: 60px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.learn-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.learn-heading {
+  font-size: 32px;
+  color: #803400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #ff922b;
+  margin-bottom: 20px;
+  transition: width 0.4s ease-in-out;
+}
+
+.learn-left:hover .underline {
+  width: 120px;
+}
+
+.learn-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b2e19;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  padding: 10px 24px;
+  background-color: #ff922b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d17200;
+}
+
+.learn-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 45%;
+}
+
+.learn-right img {
+  width: 15cm;
+  height: 10cm;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.learn-right img:hover {
+  transform: scale(1.03);
+}
+
+
+
+    .custom-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #550101;
+  color: #fdf6e3;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 45%;
+}
+
+.footer-left h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffa94d;
+}
+
+.footer-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.footer-middle{
+  justify-content: center;
+  margin-right: 7cm;
+}
+
+.footer-middle h3{
+  margin-bottom: 1cm;
+  font-weight: 700;
+  color: #ffa94d;
+}
+
+.footer-middle a{
+  line-height: 1.7;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  color: white;
+}
+
+
+.footer-right {
+  justify-content: end;
+  color: #ffa94d;
+}
+
+.social-icons h3{
+  margin-left: -5cm;
+}
+
+.social-icons .insta {
+  height: 2.3cm;
+  width: 3.2cm;
+}
+
+.social-icons .insta{
+  margin-top: 1cm;
+  margin-left: -8cm;
+}
+
+.social-icons .ln {
+  height: 1.9cm;
+  width: 2cm;
+}
+
+.social-icons .yt {
+  height: 2cm;
+  width: 1.9cm;
+}
+
+.social-icons .ln{
+  margin-left:-0.4cm;
+  margin-top: -0.5cm;
+}
+
+.social-icons .yt{
+  margin-left: 0.3cm;
+}
+
+
+
+
+
+
+

@@ -9,68 +9,56 @@
     text-decoration: none;
 }
 
-nav {
-      background-color: #9c4d0c;
-      padding: 15px 30px;
+header.hero-section {
+      height: 18cm;
+      background-image:url(../Pictures/Images/Heading.jpg);
+      color: rgb(96, 3, 3);
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      position: sticky;
-      top:0;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+
+    header.hero-section h1 {
+      font-family:Georgia, 'Times New Roman', Times, serif ;
+      font-size: 4rem;
+      margin-top: 6.5cm;
+      margin-left: 3cm;
+    }
+
+     header.hero-section h4 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+      word-spacing: 2px;
+      margin-left: 2cm;
+      margin-top: 0.5cm;
+     color: #000;
+    }
+
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       z-index: 1000;
     }
 
     .nav-links {
       display: flex;
-      gap: 1cm;
-      margin-left: 9cm;
+      justify-content: center;
     }
 
     .nav-links a {
-      color: #fffdf8;
       text-decoration: none;
-      font-size: 16px;
-      transition: color 0.3s;
+      color: #333;
+      font-weight: bold;
+      margin: 0.1cm 0.8cm;
     }
-
-    .nav-links a:hover {
-      color: #ffddaa;
-    }
-
-
-header {
-      background-color: #f5eee0;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 2px solid #d2b48c;
-    }
-
-    h1 {
-      color: #9c4d0c;
-      margin-bottom: 10px;
-    }
-
-    h5 {
-      color: #555;
-      font-size: 20px;
-      font-style: italic;
-    }
-
-#main-logo {
-  opacity: 1;
-  transition: all 0.2s ease; 
-}
-
-#main-logo.sticky-logo {
-  position: fixed;
-  top: 10px;
-  left: 25px;
-  font-size: 20px;
-  color: white;
-  background:  #9c4d0c00;
-  z-index: 1001;
-}
-
 
 :root {
     --primary: #9c4d0c;
