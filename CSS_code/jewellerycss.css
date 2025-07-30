@@ -6,35 +6,49 @@ body {
   color: #333;
 }
 
-nav {
-  background-color: #9c4d0c;
-  padding: 20px 30px;
-  display: flex;
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+        display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top:0;
-  z-index: 1000;
-}
+  
+    }
 
-.nav-links {
+    .nav-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0.1cm 0.8cm;
+    }
+
+    .logo {
   display: flex;
-  gap: 1cm;
-  margin-left: 8cm;
+  align-items: center;
 }
 
-.nav-links a {
-  color: #fffdf8;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 650;
-  transition: color 0.3s;
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
 }
 
-.nav-links a:hover {
-  color: #ffddaa;
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Georgia', serif;
 }
-
 .cart-icon {
   cursor: pointer;
   background: #ff6f61;
@@ -87,6 +101,7 @@ nav {
 .head{
     text-align: center;
     font-size: 40px;
+     margin-top: 2cm;
 }
 
 .masonry {
