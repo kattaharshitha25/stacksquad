@@ -48,10 +48,6 @@ header {
       border-bottom: 2px solid #d2b48c;
     }
 
-    h1 {
-      color: #9c4d0c;
-      margin-bottom: 10px;
-    }
 
     h5 {
       color: #555;
@@ -519,6 +515,22 @@ html{
   font-family: 'Georgia', serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.heading-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.section-title2 {
+  background-color: rgba(255, 255, 255, 0.7);  /* semi-transparent white */
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #6b0f1a; /* rich maroon or dark red */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  max-width: 90%;
+  text-align: center;
 }
 
 /*artist*/
