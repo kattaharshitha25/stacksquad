@@ -8,6 +8,25 @@
     list-style-type:none;
     text-decoration: none;
 }
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 0 10px;
+  }
+}
 body{
     background-image: url("../Pictures/galleryimages/hrbg.png");
     background-repeat: repeat;
@@ -393,6 +412,7 @@ html{
 .slider2 span:hover img{
     transform:translateY(-50px) scale(1.2);
 }
+
 .filter-select {
   text-align: right;
   margin: 20px 0;
