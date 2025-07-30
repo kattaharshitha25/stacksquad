@@ -62,9 +62,11 @@ body{
     .nav-links a {
       text-decoration: none;
       color: #333;
-      font-weight: bold;
+      font-weight: bolder;
       margin: 0.1cm 0.8cm;
       margin-top: -0.7cm;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
     }
 
     .logo {
@@ -348,7 +350,7 @@ html{
     box-shadow: 0 10px 30px rgba(248, 159, 16, 0.2);
     margin-left: 30px;
     margin-right: 30px;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content:center; /* center everything again */
     overflow: hidden;
@@ -553,7 +555,7 @@ html{
 .artist-scroll-container {
       display: flex;
       flex-direction: row;
-      gap: 1rem;
+      gap: 3rem;
       overflow-x: auto;
       overflow-y: hidden;         /* prevents vertical scroll */
       white-space: nowrap;

@@ -1,6 +1,4 @@
-
-
-    nav.navbar {
+nav.navbar {
       position: fixed;
       top: 0;
       width: 100%;
@@ -20,7 +18,27 @@
       color: #333;
       font-weight: bold;
       margin: 0.1cm 0.8cm;
+      margin-top: -0.7cm;
     }
+
+    .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
 
 body {
   margin: 0;
