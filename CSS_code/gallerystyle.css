@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;");
-*,
 *::before,
 *::after {
     margin:0;
@@ -8,46 +7,22 @@
     list-style-type:none;
     text-decoration: none;
 }
-<<<<<<< HEAD
+
 
 header.hero-section {
       height: 18cm;
       background-image:url(../Pictures/Images/Heading.jpg);
       color: rgb(96, 3, 3);
-=======
+}
+
 body{
     background-image: url("../Pictures/galleryimages/hrbg.png");
     background-repeat: repeat;
 }
-nav {
-      background-color: #9c4d0c;
-      padding: 10px 20px;
->>>>>>> e43ebd9ad9e22ff95b8a622b2259528e2020171a
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-    }
 
-    header.hero-section h1 {
-      font-family:Georgia, 'Times New Roman', Times, serif ;
-      font-size: 4rem;
-      margin-top: 6.5cm;
-      margin-left: 3cm;
-    }
 
-     header.hero-section h4 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 2rem;
-      letter-spacing: 1.5px;
-      word-spacing: 2px;
-      margin-left: 2cm;
-      margin-top: 0.5cm;
-     color: #000;
-    }
-
+  
+    
     nav.navbar {
       position: fixed;
       top: 0;
@@ -68,46 +43,28 @@ nav {
       color: #333;
       font-weight: bold;
       margin: 0.1cm 0.8cm;
+      margin-top: -0.7cm;
     }
 
-<<<<<<< HEAD
-=======
-    .nav-links a:hover {
-      color: #ffddaa;
-    }
-
-
-header {
-      background-color: #f5eee0;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 2px solid #d2b48c;
-    }
-
-
-    h5 {
-      color: #555;
-      font-size: 20px;
-      font-style: italic;
-    }
-
-#main-logo {
-  opacity: 1;
-  transition: all 0.2s ease; 
+    .logo {
+  display: flex;
+  align-items: center;
 }
 
-#main-logo.sticky-logo {
-  position: fixed;
-  top: 10px;
-  left: 25px;
-  font-size: 20px;
-  color: white;
-  background:  #9c4d0c00;
-  z-index: 1001;
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Georgia', serif;
 }
 
 
->>>>>>> e43ebd9ad9e22ff95b8a622b2259528e2020171a
 :root {
     --primary: #9c4d0c;
     --white: #ffffff;
