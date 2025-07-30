@@ -9,7 +9,7 @@ nav {
   background-color: #9c4d0c;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: sticky;
   top:0;
@@ -19,7 +19,6 @@ nav {
 .nav-links {
   display: flex;
   gap: 1cm;
-  margin-left: 9cm;
 }
 
 .nav-links a {
