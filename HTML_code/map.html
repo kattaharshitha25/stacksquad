@@ -10,16 +10,17 @@
 <body>
   <nav class="navbar">
     <div class="nav-links">
-      <a href="homepg.html">Home</a>
-      <a href="map.html">Map</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="store.html">Store</a>
+      <a href="../HTML_code/homepg.html">Home</a>
+      <a href="../HTML_code/map.html">Map</a>
+      <a href="../HTML_code/gallery.html">Gallery</a>
+      <a href="../HTML_code/store.html">Store</a>
       <a href="#">Learn</a>
-      <a href="code.html">Events</a>
+      <a href="../HTML_code/code.html">Events</a>
       <a href="#">Blog</a>
     </div>
   </nav>
 
+<<<<<<< HEAD
   <main class="main-container">
     <div class="cultures">
       <div class="heading">
@@ -41,3 +42,66 @@
   <script src="../JAVASCRIPT_code/mapjvs.js"></script>
 </body>
 </html>
+=======
+  <footer class="custom-footer">
+  <div class="footer-left">
+    <h1>RangVirasat</h1>
+    <p>
+      Preserving India’s rich artistic traditions and connecting artisans to a modern audience.<br>
+      We aim to bridge the gap between heritage and innovation through curated experiences.<br>
+      Every piece you explore helps sustain the legacy of India’s master artisans.
+    </p>
+  </div>
+
+  <div class="footer-middle">
+    <h3>Quick Links</h3>
+      <ul>
+        <li><a href="../HTML_code/map.html">Map</a></li>
+        <li><a href="../HTML_code/store.html">Store</a></li>
+        <li><a href="../HTML_code/learn.html">Learn</a></li>
+        <li><a href="../HTML_code/gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-right">
+      <div class="social-icons">
+      <h3><strong>Follow us</strong></h3><br>
+      <img src="../Pictures/Images/insta.png" alt="insta" class="insta">
+     <img src="../Pictures/Images/ln.png" alt="linkdin" class="ln">
+     <img src="../Pictures/Images/yt.png" alt="youtube" class="yt">
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+  const logo = document.getElementById("main-logo");
+  const offsetTrigger = logo.offsetTop + 50;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > offsetTrigger) {
+      logo.classList.add("sticky-logo");
+    } else {
+      logo.classList.remove("sticky-logo");
+    }
+  });
+</script>
+  
+>>>>>>> 1e6517d261368aa871ea21a5248f9880c0aba8e1:HTML_code/map.html
+        <div id="map"></div>
+    </main>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<<<<<<< HEAD
+        <script src="../JAVASCRIPT_code/mapjvs.js"></script>
+=======
+<<<<<<< HEAD:map.html
+        <script src="./mapcultures.js"></script>
+        <script src="./mapjvs.js"></script>
+=======
+        <script src="../JAVASCRIPT_code/mapjvs.js"></script>
+>>>>>>> 1e6517d261368aa871ea21a5248f9880c0aba8e1:HTML_code/map.html
+>>>>>>> e43ebd9ad9e22ff95b8a622b2259528e2020171a
+    </body>
+</html>
+>>>>>>> 2279aae9a97b73a9fd40cbf62e4cb465a4af103e
