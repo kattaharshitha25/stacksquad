@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Decor – RangVirasat</title>
+  <link rel="stylesheet" href="../CSS_code/dresscss.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1 id="main-logo">RangVirasat</h1>
+    <h5>Celebrating India's Heritage Through Art</h5>
+  </header>
+
+ <nav class="navbar">
+  <div class="nav-links">
+    <a href="homepg.html">Home</a>
+    <a href="map.html">Map</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="store.html">Store</a>
+    <a href="learn.html">Learn</a>
+    <a href="code.html">Events</a>
+    <a href="tour.html">Blog</a>
+  </div>
+
+  <!-- 🛒 Cart icon inside navbar -->
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</nav>
+
+<!-- 🛒 Slide-out cart panel (placed outside nav) -->
+<div class="cart-panel" id="cart-panel">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <p class="total">Total: ₹<span id="cart-total">0</span></p>
+  <button class="checkout-btn" onclick="checkout()">Checkout</button>
+</div>
+
+
+<h1 class="head">Material</h1>
+  <section class="masonry">
+    <div class="masonry-item">
+      <img src="dresses images/image21.webp" alt="Masala Box">
+      <div class="item-info">
+        <h3>Green - 3pc Cotton Unstitched Dharwad Dress Material</h3>
+        <p>₹1820 • Rajesthan</p>
+        <button class="cart-btn" onclick="addToCart('Dharwad Dress Material', 1820)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image22.webp" alt="S&P shakers">
+      <div class="item-info">
+        <h3>Green - 2pc Unstitched Bandhani Dress Material with Jewellery Set </h3>
+        <p>₹3800 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Bandhani Dress Material', 3800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image23.webp" alt="Spice Hanging Set">
+      <div class="item-info">
+        <h3>Purple - 3pc Cotton Unstitched Kutch Batik Print Dress Material</h3>
+        <p>₹2857 • Jharkand</p>
+        <button class="cart-btn" onclick="addToCart('Batik Print Dress Material', 2857)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image24.webp" alt="Casserole">
+      <div class="item-info">
+        <h3>Beige - 2pc Natural Dyed Block Print Ajrakh Unstitched Dress Materiala</h3>
+        <p>₹2669 • Gujarat</p>
+        <button class="cart-btn" onclick="addToCart('Ajrakh Unstitched Dress', 2669)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image25.webp" alt="Tray">
+      <div class="item-info">
+        <h3>Brown - 3pc Cotton Unstitched Pochampally Ikat Dress Material</h3>
+        <p>₹2790 • Tamil Nadu</p>
+        <button class="cart-btn" onclick="addToCart('Unstitched Pochampally Ikat', 2790)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image26.webp" alt="Set">
+      <div class="item-info">
+        <h3>Yellow - 3pc Block Print Cotton Sanganeri Unstitched Dress Material 04</h3>
+        <p>₹1990 • Assam</p>
+        <button class="cart-btn" onclick="addToCart('Sanganeri Unstitched Dress', 1990)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image27.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>Green - 2pc Kota Doria Cotton Unstitched Chikankari Dress Material</h3>
+        <p>₹2850 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Unstitched Chikankari Dress', 2850)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image28.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Maroon - 3pc Handloom Cotton Mangalagiri Unstitched Dress Material</h3>
+        <p>₹1800 • Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Mangalagiri Unstitched Dress', 1800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image29.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Black - 2pc Handloom Zari Buta Chanderi Silk Unstitched Dress Material</h3>
+        <p>₹1898 • Jharkand</p>
+        <button class="cart-btn" onclick="addToCart('Chanderi Silk Unstitched', 1898)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image30.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Grey - Jamdani Cotton Unstitched Dress Material with Jewellery Set</h3>
+        <p>₹1350 • Rajesthan</p>
+        <button class="cart-btn" onclick="addToCart('Jamdani Cotton Unstitched', 1350)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image31.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Green - 3pc Hand Embroidery Chanderi Silk Phulkari Unstitched Dress Material</h3>
+        <p>₹1800 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Phulkari Unstitched', 1800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image32.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>Blue - 3pc Zari Jaal & Buti Silk Banarasi Unstitched Dress Material</h3>
+        <p>₹1850 • Assam</p>
+        <button class="cart-btn" onclick="addToCart('Banarasi Unstitched Dress', 1850)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image33.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Red - Bengal Kantha Embroidery Cotton Unstitched Kurta Material</h3>
+        <p>₹1800 • West Bengal</p>
+        <button class="cart-btn" onclick="addToCart('Bengal Kantha Material', 1800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image34.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Red - Kalamkari Print Cotton Unstitched Kurta Material (2.7M) 34</h3>
+        <p>₹1950 • Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kalamkari Unstitched Material', 1950)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image35.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>White - 3pc Cotton Bagh Print Unstitched Dress Material with Jewellery Set </h3>
+        <p>₹1800 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Bagh Print Unstitched',1800)">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <h1 class="head">Readymade</h1>
+  <section class="masonry">
+    <div class="masonry-item">
+      <img src="dresses images/image1.webp" alt="Masala Box">
+      <div class="item-info">
+        <h3>Peach - Block Print Cotton A-Line Sanganeri Kurta</h3>
+        <p>₹820 • Rajesthan</p>
+        <button class="cart-btn" onclick="addToCart('Sanganeri Kurta', 820)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image3.webp" alt="S&P shakers">
+      <div class="item-info">
+        <h3>Maroon - Block Printed Cotton Gota Work Short Ajrakh Kurta </h3>
+        <p>₹800 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Ajrakh Kurta', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image2.webp" alt="Spice Hanging Set">
+      <div class="item-info">
+        <h3>Beige - Block Print Cotton Straight Kalamkari Kurta</h3>
+        <p>₹857 •   Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kalamkari Kurta', 857)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image4.webp" alt="Casserole">
+      <div class="item-info">
+        <h3>Purple - Gota Work Mercerised Cotton Straight Dharwad Kurta</h3>
+        <p>₹669 • Gujarat</p>
+        <button class="cart-btn" onclick="addToCart('Dharwad Kurta', 669)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image5.webp" alt="Tray">
+      <div class="item-info">
+        <h3>Red - Flared Cotton Lace Work Jacquard Kurta</h3>
+        <p>₹790 • Tamil Nadu</p>
+        <button class="cart-btn" onclick="addToCart('Jacquard Kurta<', 790)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image6.webp" alt="Set">
+      <div class="item-info">
+        <h3>Blue - Cutwork Tissue Zari Jaal Banarasi Silk Kurta</h3>
+        <p>₹990 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Banarasi Silk Kurta', 990)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image7.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>Grey - Tie-dye Cotton Patchwork Straight Bandhani Kurta</h3>
+        <p>₹850 • Assam</p>
+        <button class="cart-btn" onclick="addToCart('Bandhani Kurta', 850)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image8.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Red - Block Print Natural Dyed Cotton Straight Bagru Kurta</h3>
+        <p>₹800 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Bagru Kurta', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image9.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Beige - Block Print Mul Cotton A-Line Bagh Kurta</h3>
+        <p>₹898 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Bagh Kurta', 898)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image11.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Pink - Block Print Cotton A-Line Sanganeri Kurta</h3>
+        <p>₹350 • Rajesthan</p>
+        <button class="cart-btn" onclick="addToCart('Sanganeri Kurta', 350)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image12.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Black - Block Print Mul Cotton Straight Bagh Kurta</h3>
+        <p>₹800 • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Bagh Kurta', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image7.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>Grey - Tie-dye Cotton Patchwork Straight Bandhani Kurta</h3>
+        <p>₹850 • Assam</p>
+        <button class="cart-btn" onclick="addToCart('Bandhani Kurta', 850)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image13.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Light Pink Chikankari Hand Embroidered Cotton Long Kurta</h3>
+        <p>₹800 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Chikankari Kurta', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image14.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Red - Block Print Cotton A-Line Kalamkari Kurta</h3>
+        <p>₹750 • Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kalamkari Kurta', 750)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image15.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Brown - Chikankari Hand Embroidered Cotton Long Kurta</h3>
+        <p>₹800 • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Chikankari Kurta', 800)">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<h1 class="head">Fabrics</h1>
+  <section class="masonry">
+    <div class="masonry-item">
+      <img src="dresses images/image51.webp" alt="Masala Box">
+      <div class="item-info">
+        <h3>Multicolor - Block Print Cotton Sanganeri Fabric</h3>
+        <p>₹350/M • Rajesthan</p>
+        <button class="cart-btn" onclick="addToCart('Sanganeri Fabric', 350)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image52.webp" alt="S&P shakers">
+      <div class="item-info">
+        <h3>Blue - Natural Dyed 3 Kaam Block Print Cotton Ajrakh Fabric</h3>
+        <p>₹860/M • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Ajrakh Fabric', 860)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image53.webp" alt="Spice Hanging Set">
+      <div class="item-info">
+        <h3>Blue - Hand Batik Print Cotton Fabric</h3>
+        <p>₹400/M • Jharkand</p>
+        <button class="cart-btn" onclick="addToCart('Batik Print Fabric', 400)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image54.webp" alt="Casserole">
+      <div class="item-info">
+        <h3>Beige - Bagh Hand Block Print Natural Dyed Cotton Fabric</h3>
+        <p>₹300/M • Gujarat</p>
+        <button class="cart-btn" onclick="addToCart('Bagh Fabric', 300)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image55.webp" alt="Tray">
+      <div class="item-info">
+        <h3>Green - Grey - Tie-Dye Cotton Shibori Fabric</h3>
+        <p>₹790/M • Assam</p>
+        <button class="cart-btn" onclick="addToCart('Shibori Fabric', 790)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image56.webp" alt="Set">
+      <div class="item-info">
+        <h3>Pink - Chanderi Silk Srikalahasti Pen Kalamkari Fabric</h3>
+        <p>₹590/M • Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kalamkari Fabric', 590)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image57.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>Red - Bindaas Natural Dyed Cotton Block Print Fabric</h3>
+        <p>₹850/M • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Bindaas Natural Fabric', 850)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image58.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Purple - Block Printed Cotton Jahota Fabric</h3>
+        <p>₹500/M • Jharkand</p>
+        <button class="cart-btn" onclick="addToCart('Jahota Fabric', 500)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image59.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Maroon - Natural Dyed Block Print Cotton Pedana Kalamkari Fabric</h3>
+        <p>₹800/M • Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kalamkari Fabric', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    
+
+    <div class="masonry-item">
+      <img src="dresses images/image60.webp" alt="Napkins">
+      <div class="item-info">
+        <h3>Blue - Natural Dyed Block Print Cotton Nandana Fabric</h3>
+        <p>₹350/M • Rajesthan</p>
+        <button class="cart-btn" onclick="addToCart('Nandana Fabric', 350)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image61.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Grey - Pure Banarasi Handwoven Cutwork Buti Silk Cotton Fabric </h3>
+        <p>₹800/M • Uttar Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Banarasi Fabric',800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image62.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Yellow - Handspun Handloom Natural Dyed Cotton Jamdani Fabric </h3>
+        <p>₹800/M • Odisha</p>
+        <button class="cart-btn" onclick="addToCart('Jamdani Fabric', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image63.webp" alt="table cloth">
+      <div class="item-info">
+        <h3>White - Pure Handloom Cotton Bengal Jamdani Fabric</h3>
+        <p>₹850/M • West Bengal</p>
+        <button class="cart-btn" onclick="addToCart('Jamdani Fabric', 850)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image64.webp" alt="Cups set">
+      <div class="item-info">
+        <h3>Purple - Mercerised Cotton Dharwad Fabric</h3>
+        <p>₹800/M • Gujarat</p>
+        <button class="cart-btn" onclick="addToCart('Chikankari Kurta', 800)">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="masonry-item">
+      <img src="dresses images/image65.jpg" alt="Napkins">
+      <div class="item-info">
+        <h3>Maroon - Kanchipuram Cotton Fabric with Thread Border</h3>
+        <p>₹850/M • Andhra Predesh</p>
+        <button class="cart-btn" onclick="addToCart('Kamchipuram Fabric', 850)">Add To Cart</button>
+      </div>
+    </div>
+
+    
+  </section>
+
+   <script src="../JAVASCRIPT_code/cart.js"></script>
+
+</body>
+</html>

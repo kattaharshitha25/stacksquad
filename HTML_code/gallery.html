@@ -3,26 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>image slider</title>
-        <link rel="stylesheet" href="gallerystyle.css">
+        <link rel="stylesheet" href="../CSS_code/gallerystyle.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     </head>
     <body>
-        <header>
-            <h1>RangVirasat</h1>
-            <h5>Celebrating India's Heritage Through Art</h5>
-        </header>
-        
-        <nav>
-            <div class="nav-links">
-                <a href="homepg.html">Home</a>
-                <a href="map.html">Map</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="#">Store</a>
-                <a href="#">Learn</a>
-                <a href="code.html">Events</a>
-                <a href="#">Blog</a>
-            </div>
-        </nav>
+        <header class="header">
+    <h1 id="main-logo">RangVirasat</h1>
+    <h5>Celebrating India's Heritage Through Art</h5>
+  </header>
+
+  <nav>
+      <div class="nav-links">
+        <a href="homepg.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="store.html">Store</a>
+        <a href="learn.html">Learn</a>
+        <a href="code.html">Events</a>
+        <a href="tour.html">Blog</a>
+    </div>
+  </nav>
 
 
         <section id="tranding">
@@ -192,7 +192,7 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="galleryscript.js"></script>
+        <script src="../JAVASCRIPT_code/galleryscript.js"></script>
         <div class="container3">
             <div class="carousel-section">
                 <h2 class="sculpture-heading">Few Famous Sculptures</h2>
@@ -214,5 +214,231 @@
                 el.style.setProperty('--i', i);
             });
         </script>
+        <div class="big-card-container">
+            <h2 class="section-title">Traditional Textile Arts</h2>
+            <div class="filter-select">
+                <label for="category" id="category">Filter by Category: </label>
+                <select id="category" onchange="filterGallery(this.value)">
+                    <option value="all">All</option>
+                    <option value="saree">Sarees</option>
+                    <option value="embroidery">Embroidery</option>
+                    <option value="printing">Printing</option>
+                </select>
+            </div>
+
+            <!-- CARD GALLERY GRID -->
+            <div class="gallery-grid">
+                <div class="card saree">
+                    <div class="image-container">
+                        <img src="images/banrasi.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">Banarasi Saree</h3>
+                </div>
+
+                <div class="card printing">
+                    <div class="image-container">
+                        <img src="images/bandhani.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">Bandhani print</h3>
+                </div>
+
+                <div class="card saree">
+                    <div class="image-container">
+                        <img src="images/patola.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">patola Saree</h3>
+                </div>
+
+                <div class="card saree">
+                    <div class="image-container">
+                        <img src="images/kanjeevaram.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">kanjeevaram Saree</h3>
+                </div>
+
+                <div class="card embroidery">
+                    <div class="image-container">
+                        <img src="images/chikankari.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">chikankari embroidery</h3>
+                </div>
+
+                <div class="card saree">
+                    <div class="image-container">
+                        <img src="images/paithani.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">paithani Saree</h3>
+                </div>
+
+                <div class="card printing">
+                    <div class="image-container">
+                        <img src="images/leheriya.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">leheriya printed</h3>
+                </div>
+
+                <div class="card embroidery">
+                    <div class="image-container">
+                        <img src="images/phulkari.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">phulkari embroidery</h3>
+                </div>
+
+                <div class="card printing">
+                    <div class="image-container">
+                        <img src="images/bagru.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">bangru printed</h3>
+                </div>
+
+                <div class="card embroidery">
+                    <div class="image-container">
+                        <img src="images/zardozi.png" alt="Saree 1">
+                        <div class="overlay">
+                            <p>From Varanasi, known for its brocade silk and gold zari work.</p>
+                        </div>
+                    </div>
+                    <h3 class="title">zardozi embroidery</h3>
+                </div>
+            <!-- Add more cards -->
+            </div>
+        </div>
+        <script>
+        function filterGallery(category) {
+        const cards = document.querySelectorAll('.gallery-grid .card');
+        cards.forEach(card => {
+            card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
+        });
+        }
+        </script>
+        <h2 class="section-title">Featured Artists And Famous Arts</h2>
+
+        <div class="artist-scroll-container">
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/yamini.png" class="artist-photo">
+                <h3>yamini reddy</h3>
+                <p>famous kuchupudi dancer</p>
+                </div>
+                <div class="card-back">
+                <img src="images/yamini dance.png" class="artwork">
+                <p><strong>kuchupudi</strong></p>
+                </div>
+            </div>
+            </div>
+
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/bhajju.png" class="artist-photo">
+                <h3>Michelangelo</h3>
+                <p>Sculptor, painter, architect</p>
+                </div>
+                <div class="card-back">
+                <img src="images/bhajju art.png" class="artwork">
+                <p><strong>David</strong><br>1501–1504</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/mrinalini.png" class="artist-photo">
+                <h3>Raja Ravi Varma</h3>
+                <p>Indian pioneer of modern art</p>
+                </div>
+                <div class="card-back">
+                <img src="images/mrinalini art.png" class="artwork">
+                <p><strong>Shakuntala</strong><br>1870</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/jangrah.png" class="artist-photo">
+                <h3>Raja Ravi Varma</h3>
+                <p>Indian pioneer of modern art</p>
+                </div>
+                <div class="card-back">
+                <img src="images/jangrah art.png" class="artwork">
+                <p><strong>Shakuntala</strong><br>1870</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/subodh.png" class="artist-photo">
+                <h3>Raja Ravi Varma</h3>
+                <p>Indian pioneer of modern art</p>
+                </div>
+                <div class="card-back">
+                <img src="images/shubodh art.png" class="artwork">
+                <p><strong>Shakuntala</strong><br>1870</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/bhartikher.png" class="artist-photo">
+                <h3>bharathi kher</h3>
+                <p>Indian pioneer of modern art</p>
+                </div>
+                <div class="card-back">
+                <img src="images/bharathi art.png" class="artwork">
+                <p><strong>her famous art</strong><br>1870</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="artist-card">
+            <div class="card-inner">
+                <div class="card-front">
+                <img src="images/panditravi.png" class="artist-photo">
+                <h3>pandit ravi shankar</h3>
+                <p>traditional music player</p>
+                </div>
+                <div class="card-back">
+                <img src="images/panditsitar.png" class="artwork">
+                <p><strong>panditravi's sitar</strong><br>1870</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
     </body>
 </html>

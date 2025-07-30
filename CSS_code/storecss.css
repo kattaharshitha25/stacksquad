@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf3;
+  color: #333;
+}
+
+nav {
+  background-color: #9c4d0c;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1cm;
+  margin-left: 9cm;
+}
+
+.nav-links a {
+  color: #fffdf8;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffddaa;
+}
+
+#main-logo {
+  opacity: 1;
+  transition: all 0.2s ease; 
+}
+
+#main-logo.sticky-logo {
+  position: fixed;
+  top: 10px;
+  left: 25px;
+  font-size: 20px;
+  color: white;
+  background:  #9c4d0c00;
+  z-index: 1001;
+}
+
+
+.store-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff0e1;
+}
+
+.store-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.store-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Horizontal scroll section */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding: 40px;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #d58a0f;
+  border-radius: 4px;
+}
+
+.product-card {
+  flex: 0 0 270px;
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 7.5cm;
+  height: 7cm;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+}
+
+.product-card p {
+  padding: 0 15px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.browse-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  background-color: #d55e0d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.browse-btn:hover {
+  background-color: #a94700;
+}
+
+
