@@ -1,15 +1,79 @@
 .main-container {
   margin-top: 45px;
-  display: flex; 
+  display: flex;
 }
 
 .cultures {
-  width: 30%;
+  width: 25%;
+  height: 94vh;
+  overflow: auto;
+  background: whitesmoke;
+}
+
+.cultures .heading {
+  background: #ffa94d;
+  color: antiquewhite;
+  padding: 4px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0%;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffa94d;
+  border-radius: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.cultures ul.list {
+  padding: 0 1rem;
+}
+
+.cultures .cultures-list{
+  margin: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 1rem;
+}
+
+.cultures li:last-child .cultures-list{
+  border: none;
+}
+
+.cultures .cultures-list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffa94d;
+  font-weight: 700;
+}
+
+.cultures .cultures-list p {
+  font-size: 14px;
+  color: #404040;
 }
 
 #map {
-    height: 92vh;
-    width: 70%;
+    height: 94vh;
+    width: 75%;
     
 }
 .fade-marker {
@@ -125,5 +189,31 @@ nav.navbar {
   margin-left: 0.3cm;
 }
 
+.leaflet-popup-content-wrapper {
+  background: #fff7e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff914d;
+}
+
+.leaflet-popup-content {
+  margin: 10px 15px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.popup-box h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #d35400;
+  border-bottom: 1px solid #ffcc99;
+  padding-bottom: 4px;
+}
+
+.popup-box p {
+  margin: 4px 0;
+  font-size: 14px;
+}
 
 
