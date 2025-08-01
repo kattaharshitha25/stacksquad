@@ -77,7 +77,7 @@ body {
 .cart-panel {
   position: fixed;
   top: 60px;
-  right: 20px;
+  right: 20px; 
   width: 280px;
   background: #fff;
   border: 1px solid #ddd;
@@ -87,15 +87,62 @@ body {
   flex-direction: column;
   border-radius: 10px;
   z-index: 1001;
+   max-height: 80vh;         /* Limit height to 80% of screen */
+  overflow-y: auto;         /* Add vertical scroll if content exceeds height */
+  scrollbar-width: thin;    /* For Firefox */
 }
+
+.cart-panel .total{
+  text-align: center;
+}
+
+.cart-panel h3{
+  text-align: center;
+  color: rgb(130, 0, 0);
+}
+
 .cart-panel.open {
   display: flex;
 }
 
-.checkout-btn{
-  padding: 7px;
-  background-color: #d27205;
+.cart-panel input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.checkout-btn,
+.close-btn {
+  padding: 10px;
+  background-color: maroon;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-color: #ebe1e1;
+  border:3px solid black;
+  color: black;
+}
+
+#close-btn{
+  padding: 8px 3cm;
+}
+
 
 
 /* Masonry Layout */

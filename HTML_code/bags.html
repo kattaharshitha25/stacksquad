@@ -21,11 +21,11 @@
       <a href="../HTML_code/store.html">Store</a>
       <a href="../HTML_code/learn.html">Learn</a>
       <a href="../HTML_code/code.html">Events</a>
-      <a href="#">Blog</a>
+      <a href="../HTML_code/blog.html">Blog</a>
     </div>
 
-  <!-- 🛒 Cart icon inside navbar -->
-  <div class="cart-icon" onclick="toggleCart()">
+   <!-- 🛒 Cart icon inside navbar -->
+  <div class="cart-icon" id="cart-view" onclick="toggleCart()">
     🛒 <span id="cart-count">0</span>
   </div>
 </nav>
@@ -35,9 +35,31 @@
   <h3>Your Cart</h3>
   <ul id="cart-items"></ul>
   <p class="total">Total: ₹<span id="cart-total">0</span></p>
-  <button class="checkout-btn" onclick="checkout()">Checkout</button>
-</div>
+  <button class="checkout-btn" onclick="goToAddress()">Checkout</button>
 
+    <!-- STEP 2: ADDRESS -->
+  <div id="address-view" style="display: none;">
+    <h3>Enter Delivery Address</h3>
+    <form id="addressForm" onsubmit="submitOrder(event)">
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Address Line" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="Pin Code" required pattern="\d{6}">
+      <input type="tel" placeholder="Phone Number" required pattern="\d{10}">
+      <div class="cart-buttons">
+        <button type="submit" class="checkout-btn">Place Order</button>
+        <button type="button" class="close-btn" onclick="backToCart()">Back</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- STEP 3: CONFIRMATION -->
+  <div id="confirmation-view" style="display: none;">
+    <h3>🎉 Order Placed!</h3>
+    <p>Thank you for shopping with us!</p>
+    <button class="close-btn" id="close-btn" onclick="backToCart()">Close</button>
+  </div>
+</div>
 
 
 

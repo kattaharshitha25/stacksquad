@@ -1,0 +1,122 @@
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdfcf9;
+      color: #333;
+    }
+        nav.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0.1cm 0.8cm;
+      margin-top: -0.7cm;
+    }
+
+    .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+    .hero {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .hero img.bg {
+      width: 100%;
+      height: auto;
+      margin-top: -1.5cm;
+    }
+    .hero img.overlay {
+      position: absolute;
+      top:70%;
+      left: 13%;
+      width: 250px;
+      border: 5px solid white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .intro {
+      padding: 40px 50px;
+      background-color: #fffefc;
+    }
+    .intro h1 {
+      font-size: 40px;
+      margin-top: -20px;
+      margin-left: 15cm;
+    }
+    .intro p {
+      font-size: 17px;
+      color: #555;
+      margin-left: 15cm;
+      margin-top: -15px;
+    }
+
+  .gallery-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fefaf6;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-top .big,
+.row-bottom .big {
+    width: 60%;
+    height: 300px;
+}
+
+.row-top .small,
+.row-bottom .small {
+    width: 35%;
+    height: 300px;
+}
+
+.row-middle .mid {
+    width: 30%;
+    height: 250px;
+}
+
+.gallery-layout img {
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.gallery-layout img:hover {
+    transform: scale(1.03);
+}

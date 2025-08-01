@@ -22,7 +22,7 @@
       <a href="../HTML_code/store.html">Store</a>
       <a href="../HTML_code/learn.html">Learn</a>
       <a href="../HTML_code/code.html">Events</a>
-      <a href="#">Blog</a>
+      <a href="../HTML_code/blog.html">Blog</a>
     </div>
   </nav>
   <section class="half-page-section">
@@ -41,7 +41,7 @@ Our learning hub offers interactive workshops, hands-on tutorials, and insights 
     </div>
   </section>
 
-  <section class="learn-section">
+  <section class="learn-section" id="learn-1">
   <div class="learn-left">
     <h2 class="learn-heading">🎨 Traditional Art</h2>
     <div class="underline"></div>
@@ -49,63 +49,77 @@ Our learning hub offers interactive workshops, hands-on tutorials, and insights 
       Explore vibrant folk styles like Madhubani, Warli, and Pattachitra. Guided by skilled artisans, you’ll paint stories rooted in culture and tradition, using age-old techniques and earthy palettes.
       Limited seats, timeless skills — <strong>register now</strong> 
     </p>
-    <a href="register.html" class="cta-button">Start Learning</a>
+   <button class="cta-button" onclick="openForm()">Start Learning</button>
   </div>
   <div class="learn-right">
-    <img src="../Pictures/Images/learnarts.jpg" alt="Art Class" />
-    <!-- <img src="images/paint-class2.jpg" alt="Art Practice" /> -->
+     <img src="../Pictures/Images/learnarts.jpg" alt="Art Class" />
   </div>
 </section>
 
-  <section class="learn-section">
+  <section class="learn-section" id="learn-2">
   <div class="learn-left">
     <h2 class="learn-heading">🎨  Pottery & Clay Modeling</h2>
     <div class="underline"></div>
     <p class="learn-description">
      Feel the earth in your hands as you shape and mold with traditional pottery wheels and tools. Learn hand-molding, sculpting, and decorative techniques passed down through generations.
     Limited seats, timeless skills — <strong>register now</strong></p>
-    <a href="register.html" class="cta-button">Start Learning</a>
+     <button class="cta-button" onclick="openForm()">Start Learning</button>
   </div>
   <div class="learn-right">
-    <img src="../Pictures/Images/learnpot.webp" alt="Art Class" />
-    <!-- <img src="images/paint-class2.jpg" alt="Art Practice" /> -->
+     <img src="../Pictures/Images/learnpot.webp" alt="Art Class" />
   </div>
 </section>
 
-  <section class="learn-section">
+  <section class="learn-section" id="learn-3">
   <div class="learn-left">
     <h2 class="learn-heading">🎨 Classical Dance</h2>
     <div class="underline"></div>
     <p class="learn-description">
      Step into the rhythm of Bharatnatyam, Kathak, or Odissi. These classical forms blend grace, expression, and storytelling, helping you connect with Indian heritage through movement.
     Limited seats, timeless skills — <strong>register now</strong></p>
-    <a href="register.html" class="cta-button">Start Learning</a>
+    <button class="cta-button" onclick="openForm()">Start Learning</button>
   </div>
   <div class="learn-right">
-    <img src="../Pictures/Images/learnclass.jpg" alt="Art Class" />
-    <!-- <img src="images/paint-class2.jpg" alt="Art Practice" /> -->
+     <img src="../Pictures/Images/learnclass.jpg" alt="Art Class" />
   </div>
 </section>
 
-  <section class="learn-section">
+  <section class="learn-section" id="learn-4">
   <div class="learn-left">
     <h2 class="learn-heading">🎨 Calligraphy & Ancient Scripts</h2>
     <div class="underline"></div>
     <p class="learn-description">
       Discover the elegance of hand-lettering inspired by ancient Indian scripts. From Devanagari to regional styles, learn the beauty of form, stroke, and symbolism.
     Limited seats, timeless skills — <strong>register now</strong></p>
-    <a href="register.html" class="cta-button">Start Learning</a>
+    <button class="cta-button" onclick="openForm()">Start Learning</button>
   </div>
   <div class="learn-right">
     <img src="../Pictures/Images/learncal.jpg" alt="Art Class" />
-    <!-- <img src="images/paint-class2.jpg" alt="Art Practice" /> -->
   </div>
 </section>
+
+
+<!-- Your popup form -->
+<div id="popup-form" class="popup-overlay">
+  <div class="popup-content">
+    <h3>Enter Your Details</h3>
+    <form onsubmit="submitPopupForm(event)">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <div class="popup-buttons">
+        <button type="submit">Submit</button>
+        <button type="button" onclick="closeForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 
 </body>
 </html>
 
-
+  <script src="../JAVASCRIPT_code/learn.js"></script>
 
   <footer class="custom-footer">
   <div class="footer-left">

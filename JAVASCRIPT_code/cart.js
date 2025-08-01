@@ -1,95 +1,3 @@
-// let cart = [];
-// let total = 0;
-
-// function addToCart(name, price) {
-//   cart.push({ name, price });
-//   total += price;
-//   updateCart();
-//   showConfirmation(`${name} added to cart!`);
-// }
-
-// function updateCart() {
-//   const cartList = document.getElementById('cart-items');
-//   const cartCount = document.getElementById('cart-count');
-//   const cartTotal = document.getElementById('cart-total');
-
-//   cartList.innerHTML = '';
-//   total = 0;
-
-//   cart.forEach((item, index) => {
-//     const li = document.createElement('li');
-//     li.innerHTML = `${item.name} - ₹${item.price} <button onclick="removeItem(${index})">❌</button>`;
-//     cartList.appendChild(li);
-//     total += item.price;
-//   });
-
-//   cartCount.innerText = cart.length;
-//   cartTotal.innerText = total;
-// }
-
-// function removeItem(index) {
-//   cart.splice(index, 1);
-//   updateCart();
-// }
-
-// function toggleCart() {
-//   document.getElementById('cart-panel').classList.toggle('open');
-// }
-
-// function checkout() {
-//   if (cart.length === 0) {
-//     alert("Your cart is empty!");
-//     return;
-//   }
-//   alert(`Order placed successfully! Total: ₹${total}`);
-//   cart = [];
-//   updateCart();
-//   toggleCart();
-// }
-
-// function showConfirmation(message) {
-//   const confirmBox = document.createElement('div');
-//   confirmBox.innerText = message;
-//   confirmBox.style.position = 'fixed';
-//   confirmBox.style.top = '20px';
-//   confirmBox.style.right = '20px';
-//   confirmBox.style.backgroundColor = '#4CAF50';
-//   confirmBox.style.color = 'white';
-//   confirmBox.style.padding = '10px 20px';
-//   confirmBox.style.borderRadius = '6px';
-//   confirmBox.style.zIndex = '1000';
-//   confirmBox.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
-//   document.body.appendChild(confirmBox);
-
-//   setTimeout(() => {
-//     confirmBox.remove();
-//   }, 2000);
-// }
-
-// // ✅ Close cart when clicking outside
-// document.addEventListener('click', function (event) {
-//   const cartPanel = document.getElementById('cart-panel');
-//   const cartHeader = document.querySelector('.cart-header');
-
-//   if (!cartPanel.contains(event.target) && !cartHeader.contains(event.target)) {
-//     cartPanel.classList.remove('open');
-//   }
-// });
-
-
-//   const logo = document.getElementById("main-logo");
-//   const offsetTrigger = logo.offsetTop + 50;
-
-//   window.addEventListener("scroll", () => {
-//     if (window.scrollY > offsetTrigger) {
-//       logo.classList.add("sticky-logo");
-//     } else {
-//       logo.classList.remove("sticky-logo");
-//     }
-//   });
-
-
-
 let cart = [];
 let total = 0;
 
@@ -124,18 +32,7 @@ function removeItem(index) {
 }
 
 function toggleCart() {
-  document.getElementById('cart-panel').classList.toggle('open');
-}
-
-function checkout() {
-  if (cart.length === 0) {
-    alert("Your cart is empty!");
-    return;
-  }
-  alert(`Order placed successfully! Total: ₹${total}`);
-  cart = [];
-  updateCart();
-  document.getElementById('cart-panel').classList.remove('open');
+  document.getElementById('cart-view').classList.toggle('open');
 }
 
 function showConfirmation(message) {
@@ -166,15 +63,45 @@ document.addEventListener('click', function (event) {
   }
 });
 
-  const logo = document.getElementById("main-logo");
-  const header = document.querySelector(".header");
 
-  window.addEventListener("scroll", () => {
-    const headerBottom = header.offsetHeight;
-    if (window.scrollY > headerBottom) {
-      logo.classList.add("sticky-logo");
-    } else {
-      logo.classList.remove("sticky-logo");
-    }
-  });
+  function toggleCart() {
+  const cartPanel = document.getElementById('cart-panel');
+  cartPanel.classList.toggle('open');
 
+  // Reset views
+  document.getElementById('cart-view').style.display = 'block';
+  document.getElementById('address-view').style.display = 'none';
+  document.getElementById('confirmation-view').style.display = 'none';
+}
+
+function goToAddress() {
+  document.getElementById('cart-items').style.display = 'none';
+  document.querySelector('.total').style.display = 'none';
+  document.querySelector('.checkout-btn').style.display = 'none';
+  document.getElementById('address-view').style.display = 'block';
+}
+
+function backToCart() {
+  document.getElementById('cart-items').style.display = 'block';
+  document.querySelector('.total').style.display = 'block';
+  document.querySelector('.checkout-btn').style.display = 'block';
+  document.getElementById('address-view').style.display = 'none';
+  document.getElementById('confirmation-view').style.display = 'none';
+}
+
+
+function submitOrder(event) {
+  event.preventDefault();
+
+  // Hide address, show confirmation
+  document.getElementById('address-view').style.display = 'none';
+  document.getElementById('confirmation-view').style.display = 'block';
+
+  // Reset cart values
+  cart = [];
+  updateCart();
+}
+
+function closeCart() {
+  document.getElementById('cart-panel').classList.remove('open');
+}
