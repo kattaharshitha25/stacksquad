@@ -1,4 +1,4 @@
-const map = L.map('map').setView([51.505, -0.09], 5);
+const map = L.map('map').setView([51.505, -0.09], 10);
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
 const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, coded by stacksquad with ♥';
@@ -12,52 +12,52 @@ map.setMaxBounds([
 ]);
 
 const icon1 = L.icon({ 
-  iconUrl: 'mapimages/kalamk.png',
+  iconUrl: '../pictures/mapimages/kalamk.png',
   iconSize: [120, 120] });
 const icon2 = L.icon({ 
-  iconUrl: 'mapimages/arunap.png', 
+  iconUrl: '../pictures/mapimages/arunap.png', 
   iconSize: [62, 72] });
 const icon3 = L.icon({ 
-  iconUrl: 'mapimages/assamtoys.png', 
+  iconUrl: '../pictures/mapimages/assamtoys.png', 
   iconSize: [62, 72] });
 const icon4 = L.icon({ 
-  iconUrl: 'mapimages/madhubani-br.png', 
+  iconUrl: '../pictures/mapimages/madhubani-br.png', 
   iconSize: [92, 92] });
 const icon5 = L.icon({ 
-  iconUrl: 'mapimages/dollguj.png', 
+  iconUrl: '../pictures/mapimages/dollguj.png', 
   iconSize: [72, 92] });
 const icon6 = L.icon({ 
-  iconUrl: 'mapimages/kashmirarts.png', 
+  iconUrl: '../pictures/mapimages/kashmirarts.png', 
   iconSize: [62, 72] });
 const icon7 = L.icon({ 
-  iconUrl: 'mapimages/chitrakathi.png', 
+  iconUrl: '../pictures/mapimages/chitrakathi.png', 
   iconSize: [152, 92] });
 const icon8 = L.icon({ 
-  iconUrl: 'mapimages/gondpain.png', 
+  iconUrl: '../pictures/mapimages/gondpain.png', 
   iconSize: [102, 132] });
 const icon9 = L.icon({ 
-  iconUrl: 'mapimages/warli-icon.png', 
+  iconUrl: '../pictures/mapimages/warli-icon.png', 
   iconSize: [52, 52] });
 const icon10 = L.icon({ 
-  iconUrl: 'mapimages/manipur.png', 
+  iconUrl: '../pictures/mapimages/manipur.png', 
   iconSize: [62, 72] });
 const icon11 = L.icon({ 
-  iconUrl: 'mapimages/pattachitra.png', 
+  iconUrl: '../pictures/mapimages/pattachitra.png', 
   iconSize: [92, 92] });
 const icon12 = L.icon({ 
-  iconUrl: 'mapimages/punjab.png', 
+  iconUrl: '../pictures/mapimages/punjab.png', 
   iconSize: [72, 82] });
 const icon13 = L.icon({ 
-  iconUrl: 'mapimages/phadraj.png', 
+  iconUrl: '../pictures/mapimages/phadraj.png', 
   iconSize: [72, 92] });
 const icon14 = L.icon({ 
-  iconUrl: 'mapimages/tanjore.png', 
+  iconUrl: '../pictures/mapimages/tanjore.png', 
   iconSize: [92, 92] });
 const icon15 = L.icon({ 
-  iconUrl: 'mapimages/sanjhiup.png', 
+  iconUrl: '../pictures/mapimages/sanjhiup.png', 
   iconSize: [62, 62] });
 const icon16 = L.icon({ 
-  iconUrl: 'mapimages/kalighat.png', 
+  iconUrl: '../Pictures/mapimages/kalighat.png', 
   iconSize: [52, 52] });
 
 const marker1 = L.marker([15.9129, 79.73999], { icon: icon1 });
