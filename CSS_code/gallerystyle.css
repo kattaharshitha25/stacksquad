@@ -128,13 +128,6 @@ html{
 ::-webkit-scrollbar-track{
     background:#f9f9f9;
 }
-/*.tranding-slide-content {
-  flex: 1;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}*/
 .container{
     max-width:124rem;
     padding: 0 1rem;
@@ -183,6 +176,7 @@ html{
     display: flex;              /* NEW: Layout the card in vertical direction */
     flex-direction: column; 
 }
+
 @media (max-width:500px){
     .tranding-slide {
         width: 18rem !important;
@@ -239,18 +233,39 @@ html{
 .rating ion-icon{
     color: var(--primary);
 }
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 20 !important;
+  pointer-events: auto !important;
+}
+
+/* Only block pointer events for content overlays */
+.tranding-slide-content {
+  pointer-events: none;
+}
+
+/* Allow arrow icons to be clickable */
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 20 !important;
+  pointer-events: auto !important;
+}
+
+.swiper-button-next *,
+.swiper-button-prev * {
+  pointer-events: auto !important;
+}
+
+
+.swiper-button-next *,
+.swiper-button-prev * {
+  pointer-events: auto !important;
+}
+
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right{
     z-index: 0;
 }
-/*.tranding-slider .swiper-wrapper {
-  display: flex;
-}
-.tranding-slider {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}*/
 
 .tranding-slider-control{
     position:relative;
@@ -314,12 +329,6 @@ html{
 .tranding-slider-control .swiper-pagination .swiper-pagination-active{
     background: var(--primary);
 }
-/*.tranding-slide-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}*/
 .tranding-slide-img {
   position: relative;
   flex: 1;
@@ -551,13 +560,13 @@ html{
   text-align: center;
 }
 
-/*artist*/
+
 .artist-scroll-container {
       display: flex;
       flex-direction: row;
-      gap: 3rem;
+      gap: 3.5rem;
       overflow-x: auto;
-      overflow-y: hidden;         /* prevents vertical scroll */
+      overflow-y: hidden;         
       white-space: nowrap;
       padding: 4rem;
       box-sizing: border-box;
@@ -591,6 +600,7 @@ html{
     animation: floatUpDown 3s ease-in-out infinite;
 }
 .artist-card {
+    transform-style: preserve-3d;
     flex: 0 0 auto;               /* Prevent flex items from shrinking */
     width: 190px;
     height: 200px;
@@ -600,7 +610,6 @@ html{
     animation-name: floatRandom;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    transform: translateY(-25px);
 }
 .artist-card:nth-child(1) {
     animation-duration: 3.2s;
@@ -636,6 +645,8 @@ html{
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .artist-card:hover .card-inner {
