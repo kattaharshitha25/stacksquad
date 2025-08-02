@@ -21,11 +21,11 @@
       <a href="../HTML_code/store.html">Store</a>
       <a href="../HTML_code/learn.html">Learn</a>
       <a href="../HTML_code/code.html">Events</a>
-      <a href="#">Blog</a>
+      <a href="../HTML_code/blog.html">Blog</a>
     </div>
 
-  <!-- 🛒 Cart icon inside navbar -->
-  <div class="cart-icon" onclick="toggleCart()">
+    <!-- 🛒 Cart icon inside navbar -->
+  <div class="cart-icon" id="cart-view" onclick="toggleCart()">
     🛒 <span id="cart-count">0</span>
   </div>
 </nav>
@@ -35,9 +35,31 @@
   <h3>Your Cart</h3>
   <ul id="cart-items"></ul>
   <p class="total">Total: ₹<span id="cart-total">0</span></p>
-  <button class="checkout-btn" onclick="checkout()">Checkout</button>
-</div>
+  <button class="checkout-btn" onclick="goToAddress()">Checkout</button>
 
+    <!-- STEP 2: ADDRESS -->
+  <div id="address-view" style="display: none;">
+    <h3>Enter Delivery Address</h3>
+    <form id="addressForm" onsubmit="submitOrder(event)">
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Address Line" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="Pin Code" required pattern="\d{6}">
+      <input type="tel" placeholder="Phone Number" required pattern="\d{10}">
+      <div class="cart-buttons">
+        <button type="submit" class="checkout-btn">Place Order</button>
+        <button type="button" class="close-btn" onclick="backToCart()">Back</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- STEP 3: CONFIRMATION -->
+  <div id="confirmation-view" style="display: none;">
+    <h3>🎉 Order Placed!</h3>
+    <p>Thank you for shopping with us!</p>
+    <button class="close-btn" id="close-btn" onclick="backToCart()">Close</button>
+  </div>
+</div>
 
 <h1 class="head">Material</h1>
   <section class="masonry">
@@ -463,6 +485,39 @@
 
     
   </section>
+
+
+  
+        <footer class="custom-footer">
+  <div class="footer-left">
+    <h1>RangVirasat</h1>
+    <p>
+      Preserving India’s rich artistic traditions and connecting artisans to a modern audience.<br>
+      We aim to bridge the gap between heritage and innovation through curated experiences.<br>
+      Every piece you explore helps sustain the legacy of India’s master artisans.
+    </p>
+  </div>
+
+  <div class="footer-middle">
+    <h3>Quick Links</h3>
+      <ul>
+        <li><a href="../HTML_code/map.html">Map</a></li>
+        <li><a href="../HTML_code/store.html">Store</a></li>
+        <li><a href="../HTML_code/learn.html">Learn</a></li>
+        <li><a href="../HTML_code/gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-right">
+      <div class="social-icons">
+      <h3><strong>Follow us</strong></h3><br>
+      <img src="../Pictures/Images/insta.png" alt="insta" class="insta">
+     <img src="../Pictures/Images/ln.png" alt="linkdin" class="ln">
+     <img src="../Pictures/Images/yt.png" alt="youtube" class="yt">
+    </div>
+  </div>
+</footer>
 
    <script src="../JAVASCRIPT_code/cart.js"></script>
 

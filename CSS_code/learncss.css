@@ -94,7 +94,6 @@ body {
 .image-side .img2 {
   width: 8cm;
   height: 6cm;
-  margin-top: 2cm;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -103,8 +102,8 @@ body {
 .image-side .img3 {
   width: 13cm;
   height: 6cm;
-  margin-top: 15cm;
-  margin-left: -12.5cm;
+  margin-top: 13cm;
+  margin-left: -14cm;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -138,10 +137,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff2e6;
-  padding: 60px 80px;
+  
+  padding: 100px 100px;
   gap: 40px;
   flex-wrap: wrap;
+}
+
+#learn-1{
+  background-image: url(../Pictures/Images/learnbg1.webp);
+}
+
+#learn-2{
+  background-image: url(../Pictures/Images/learnbg2.webp);
+}
+
+#learn-3{
+  background-image: url(../Pictures/Images/learnbg1.webp);
+}
+
+#learn-4{
+  background-image: url(../Pictures/Images/learnbg2.webp);
 }
 
 .learn-left {
@@ -198,8 +213,8 @@ body {
 }
 
 .learn-right img {
-  width: 15cm;
-  height: 10cm;
+  width: 13cm;
+  height: 8cm;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
@@ -299,3 +314,60 @@ body {
 
 
 
+/* Popup background overlay */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup form box */
+.popup-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input styling */
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.popup-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-buttons button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.popup-buttons button[type="button"] {
+  background-color: #ccc;
+}
