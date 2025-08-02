@@ -26,7 +26,7 @@ header.hero-section {
   }
 }
 
-/* For phones */
+
 @media (max-width: 480px) {
   .heading {
     font-size: 1.2rem;
@@ -142,9 +142,6 @@ html{
     color: var(--primary);
     padding: 2rem 0;
 }
-/*.tranding-slide-img img {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}*/
 
 #tranding{
     padding:4rem 0;
@@ -239,12 +236,11 @@ html{
   pointer-events: auto !important;
 }
 
-/* Only block pointer events for content overlays */
+
 .tranding-slide-content {
   pointer-events: none;
 }
 
-/* Allow arrow icons to be clickable */
 .swiper-button-next,
 .swiper-button-prev {
   z-index: 20 !important;
@@ -549,12 +545,12 @@ html{
   padding: 10px 0;
 }
 .section-title2 {
-  background-color: rgba(255, 255, 255, 0.7);  /* semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.7);  
   padding: 4px 10px;
   border-radius: 10px;
   font-size: 2.3rem;
   font-weight: bold;
-  color: #6b0f1a; /* rich maroon or dark red */
+  color: #6b0f1a; 
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   max-width: 90%;
   text-align: center;
@@ -601,7 +597,7 @@ html{
 }
 .artist-card {
     transform-style: preserve-3d;
-    flex: 0 0 auto;               /* Prevent flex items from shrinking */
+    flex: 0 0 auto;               
     width: 190px;
     height: 200px;
     perspective: 1000px;
