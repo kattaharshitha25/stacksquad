@@ -26,7 +26,7 @@ window.addEventListener('load', function () {
   document.querySelector('.tranding-slider').addEventListener('click', (e) => {
   const activeSlide = document.querySelector('.swiper-slide-active');
 
-  // Prevent arrow click interference
+  
   if (e.target.closest('.swiper-button-next') || e.target.closest('.swiper-button-prev')) {
     return;
   }
