@@ -38,7 +38,7 @@ function onEachFeature(feature, layer) {
     <em>Origin:</em> ${props.origin}<br>
     <em>Technique:</em> ${props.Technique}<br>
     <em>Famous Artist(s):</em> ${props.FamousArtist}<br>
-    <em>Famous Museum:</em> ${props.Mesuem}<br>
+    <em>Famous Museum:</em> ${props["Famous Museum"]}<br>
   `;
   layer.bindPopup(popupContent);
 }
@@ -102,7 +102,7 @@ function flyToStore(store) {
   <em>Origin:</em> ${store.properties.origin}<br>
   <em>Technique:</em> ${store.properties.Technique}<br>
   <em>Famous Artist(s):</em> ${store.properties.FamousArtist}<br>
-  <em>Famous Museum:</em> ${store.properties.Museum}
+ <em>Famous Museum:</em> ${store.properties["Famous Museum"]}
 `)
   .openOn(map);
 }
