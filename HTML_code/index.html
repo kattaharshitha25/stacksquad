@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RangVirasat</title>
 
+   <link rel="stylesheet" href="/stacksquad/CSS_code/homepgcss.css" >
+   <link rel="icon" type="image/png" href="../Pictures/Images/logo2.png">
+
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo">
+    <img src="../Pictures/Images/logo2.png" alt="Logo">
+    <span class="brand-name">RangVirasat</span>
+  </div>
+    <div class="nav-links">
+      <a href="../HTML_code/homepg.html">Home</a>
+      <a href="../HTML_code/mapp.html">Map</a>
+      <a href="../HTML_code/gallery.html">Gallery</a>
+      <a href="../HTML_code/store.html">Store</a>
+      <a href="../HTML_code/learn.html">Learn</a>
+      <a href="../HTML_code/code.html">Events</a>
+      <a href="../HTML_code/blog.html">Blog</a>
+    </div>
+  </nav> 
+
+  <header class="hero-section">
+    <h1 class="transition">RangVirasat</h1>
+    <h4 class="transition">Celebrating India's Heritage Through Art</h4>
+  </header>
+
+  <section class="content-section">
+    <h2 class="transition">Discover the Beauty of India’s Timeless Arts</h2>
+    <p style="text-align:center; max-width: 600px; margin: auto;">
+      Welcome to RangVirasat, where every scroll reveals a new layer of cultural wonder. From tribal crafts to temple carvings, we bring India’s rich art heritage to your fingertips.
+    </p>
+  </section>
+
+<section class="image-gallery">
+
+  <!-- Pattachitra Art -->
+  <div class="image-card">
+    <img src="../Pictures/Images/Pattachitra - m.png" alt="Pattachitra Art">
+    <div class="info">
+      <h4>Pattachitra Art</h4>
+      <p>Art of Orissa & West Bengal</p>
+      <div class="buttons">
+        <button onclick="expandOverlay('overlay1')">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="expanded-overlay" id="overlay1">
+    <div class="flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="flipper">
+        <div class="front">
+          <img src="../Pictures/Images/Pattachitra - info.png" alt="Pattachitra Info">
+        </div>
+        <div class="back">
+          <img src="../Pictures/Images/Pattachitra - info2.png" alt="Pattachitra Info 2">
+        </div>
+      </div>
+    </div>
+    <button onclick="closeOverlay('overlay1')">Close</button>
+  </div>
+
+  <!-- Chola Bronzes -->
+  <div class="image-card">
+    <img src="../Pictures/Images/tamilnadu.png" alt="Chola Bronzes">
+    <div class="info">
+      <h4>Chola Bronzes</h4>
+      <p>Sculpture carving of Tamil Nadu</p>
+      <div class="buttons">
+        <button onclick="expandOverlay('overlay2')">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="expanded-overlay" id="overlay2">
+    <div class="flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="flipper">
+        <div class="front">
+          <img src="../Pictures/Images/chola-info1.png" alt="Chola Info">
+        </div>
+        <div class="back">
+          <img src="../Pictures/Images/chola-info2.png" alt="Chola Info 2">
+        </div>
+      </div>
+    </div>
+    <button onclick="closeOverlay('overlay2')">Close</button>
+  </div>
+
+  <!-- Warli Art -->
+  <div class="image-card">
+    <img src="../Pictures/Images/Warli - m.png" alt="Warli Art">
+    <div class="info">
+      <h4>Warli Art</h4>
+      <p>Folk painting from Maharashtra</p>
+      <div class="buttons">
+        <button onclick="expandOverlay('overlay3')">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="expanded-overlay" id="overlay3">
+    <div class="flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="flipper">
+        <div class="front">
+          <img src="../Pictures/Images/warli-info1.png" alt="Warli Info">
+        </div>
+        <div class="back">
+          <img src="../Pictures/Images/warli-info2.png" alt="Warli Info 2">
+        </div>
+      </div>
+    </div>
+    <button onclick="closeOverlay('overlay3')">Close</button>
+  </div>
+
+  <!-- Madhubani Art -->
+  <div class="image-card">
+    <img src="../Pictures/Images/madhubani - m.png" alt="Madhubani Art">
+    <div class="info">
+      <h4>Madhubani Art</h4>
+      <p>Folk painting from Bihar</p>
+      <div class="buttons">
+        <button onclick="expandOverlay('overlay4')">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="expanded-overlay" id="overlay4">
+    <div class="flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="flipper">
+        <div class="front">
+          <img src="../Pictures/Images/madhubani-info1.png" alt="Madhubani Info">
+        </div>
+        <div class="back">
+          <img src="../Pictures/Images/madhubani-info2.png" alt="Madhubani Info 2">
+        </div>
+      </div>
+    </div>
+    <button onclick="closeOverlay('overlay4')">Close</button>
+  </div>
+
+  <!-- Khajuraho -->
+  <div class="image-card">
+    <img src="../Pictures/Images/S2.png" alt="Khajuraho Stone Carvings">
+    <div class="info">
+      <h4>Khajuraho Stone Carvings</h4>
+      <p>Sculpture carving of Madhya Pradesh</p>
+      <div class="buttons">
+        <button onclick="expandOverlay('overlay5')">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="expanded-overlay" id="overlay5">
+    <div class="flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="flipper">
+        <div class="front">
+          <img src="../Pictures/Images/khajuraho-info1.png" alt="Khajuraho Info">
+        </div>
+        <div class="back">
+          <img src="../Pictures/Images/khajuraho-info2.png" alt="Khajuraho Info 2">
+        </div>
+      </div>
+    </div>
+    <button onclick="closeOverlay('overlay5')">Close</button>
+  </div>
+
+  <!-- Kalamkari Art -->
+  <div class="image-card">
+    <img src="../Pictures/Images/Kalamkari - m.png" alt="Kalamkari Art">
+    <div class="info">
+      <h4>Kalamkari Art</h4>
+      <p>Folk painting from Andhra Pradesh & Telangana</p>
+      <div class="buttons">
+        <button onclick="expandOverlay('overlay6')">View More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="expanded-overlay" id="overlay6">
+    <div class="flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="flipper">
+        <div class="front">
+          <img src="../Pictures/Images/kalamkari-info1.png" alt="Kalamkari Info">
+        </div>
+        <div class="back">
+          <img src="../Pictures/Images/kalamkari-info2.png" alt="Kalamkari Info 2">
+        </div>
+      </div>
+    </div>
+    <button onclick="closeOverlay('overlay6')">Close</button>
+  </div>
+
+</section>
+
+
+<section class="features-section">
+    <h1 class="features-title">Why Choose us ?</h1>
+    <div class="features-container">
+      <a href="../HTML_code/mapp.html" class="feature-link">
+      <a href="../HTML_code/mapp.html" class="feature-link">
+
+      <div class="feature-box">
+        <div class="feature-icon">🗺️</div>
+        <div class="feature-title">Interactive Cultural Map</div>
+        <div class="feature-desc">
+          Discover traditional art forms, local galleries, and museums via our clickable map experience.
+        </div>
+    </div></a>
+    
+
+    <a href="/stacksquad/HTML_code/store.html" class="feature-link">
+    <a href="../HTML_code/store.html" class="feature-link">
+
+      <div class="feature-box">
+        <div class="feature-icon">🛍️</div>
+        <div class="feature-title">Artisan-Supported Store</div>
+        <div class="feature-desc">
+          From hand-painted scrolls to printed tote bags, your purchases directly empower local art communities.
+        </div>
+    </div></a>
+
+
+
+    <a href="/stacksquad/HTML_code/map.html" class="feature-link">
+    <a href="../HTML_code/learn.html" class="feature-link">
+
+        <div class="feature-box">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-title">Learn Through Interaction</div>
+        <div class="feature-desc">
+          Take part in live workshops, self-paced courses, and step-by-step tutorials guided by traditional artisans.
+        </div>
+    </div></a>
+
+
+
+    <a href="../HTML_code/blog.html" class="feature-link">
+        <div class="feature-box">
+        <div class="feature-icon">📰</div>
+        <div class="feature-title">Stories that Inspire</div>
+        <div class="feature-desc">
+          Dive into artist interviews, ancient art tales, revival journeys, and guides that connect tradition with today.
+        </div>
+    </div></a></div>
+</section>
+
+<section class="css-slider-section">
+  <h2 class="css-slider-title">What People Are Saying</h2>
+
+  <div class="slider-wrapper">
+    <div class="slide fade">
+      <p class="quote">“RangVirasat helped me reconnect with my roots. Learning Madhubani online was incredibly inspiring.”</p>
+      <div class="author">— Aanya Mehta, Art Student</div>
+    </div>
+
+    <div class="slide fade">
+      <p class="quote">“As a Warli artist, this is the first time I’ve been able to reach real art lovers across India.”</p>
+      <div class="author">— Ramdas Pawar, Warli Artist</div>
+    </div>
+
+    <div class="slide fade">
+      <p class="quote">“A cultural goldmine! I’ve planned two entire trips based on their map and blog.”</p>
+      <div class="author">— Anish Patel, Travel Blogger</div>
+    </div>
+  </div>
+</section>
+
+<footer class="custom-footer">
+  <div class="footer-left">
+    <h1>RangVirasat</h1>
+    <p>
+      Preserving India’s rich artistic traditions and connecting artisans to a modern audience.<br>
+      We aim to bridge the gap between heritage and innovation through curated experiences.<br>
+      Every piece you explore helps sustain the legacy of India’s master artisans.
+    </p>
+  </div>
+
+  <div class="footer-middle">
+    <h3>Quick Links</h3>
+      <ul>
+        <li><a href="../HTML_code/mapp.html">Map</a></li>
+        <li><a href="../HTML_code/store.html">Store</a></li>
+        <li><a href="../HTML_code/learn.html">Learn</a></li>
+        <li><a href="../HTML_code/gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-right">
+      <div class="social-icons">
+      <h3><strong>Follow us</strong></h3><br>
+      <img src="../Pictures/Images/insta.png" alt="insta" class="insta">
+     <img src="../Pictures/Images/ln.png" alt="linkdin" class="ln">
+     <img src="../Pictures/Images/yt.png" alt="youtube" class="yt">
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  window.addEventListener("load", () => {
+    const elements = document.getElementsByClassName("transition");
+    for (let el of elements) {
+      el.classList.add("fade-in");
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll(".transition").forEach(el => {
+    observer.observe(el);
+  });
+
+    function expandOverlay(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeOverlay(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  function expandOverlay(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeOverlay(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+
+</script>
+
+
+
+</body>
+</html>
