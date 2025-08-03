@@ -10,83 +10,18 @@ map.setMaxBounds([
   [35.67, 97.395] 
 ]);
 
-const icon1 = L.icon({
-  iconUrl: '../Pictures/mapimages/warli-icon.png',
-  iconSize: [52, 52]
-})
-const icon2 = L.icon({
-  iconUrl: '../Pictures/mapimages/kalighat.png',
-  iconSize: [52, 52]
-})
-const icon3 = L.icon({
-  iconUrl: '../Pictures/mapimages/kalamk.png',
-  iconSize: [120, 120]
-})
-const icon4 = L.icon({
-  iconUrl: '../Pictures/mapimages/madhubani-br.png',
-  iconSize: [92, 92]
-})
-const icon5 = L.icon({
-  iconUrl: '../Pictures/mapimages/pattachitra.png',
-  iconSize: [92, 92]
-})
-const icon6 = L.icon({
-  iconUrl: '../Pictures/mapimages/tanjore.png',
-  iconSize: [92, 92]
-})
-const icon7 = L.icon({
-  iconUrl: '../Pictures/mapimages/chitrakathi.png',
-  iconSize: [92, 92]
-})
-const icon8 = L.icon({
-  iconUrl: '../Pictures/mapimages/gondpain.png',
-  iconSize: [102, 132]
-})
-const icon9 = L.icon({
-  iconUrl: '../Pictures/mapimages/dollguj.png',
-  iconSize: [72, 92]
-})
-const icon10 = L.icon({
-  iconUrl: '../Pictures/mapimages/phadraj.png',
-  iconSize: [72, 92]
-})
-const icon11 = L.icon({
-  iconUrl: '../Pictures/mapimages/sanjhiup.png',
-  iconSize: [62, 62]
-})
-const icon12 = L.icon({
-  iconUrl: '../Pictures/mapimages/punjab.png',
-  iconSize: [72, 82]
-})
-const icon13 = L.icon({
-  iconUrl: '../Pictures/mapimages/kashmirarts.png',
-  iconSize: [62, 72]
-})
-const icon14 = L.icon({
-  iconUrl: '../Pictures/mapimages/assamtoys.png',
-  iconSize: [62, 72]
-})
-const icon15 = L.icon({
-  iconUrl: '../Pictures/mapimages/manipur.png',
-  iconSize: [62, 72]
-})
-const icon16 = L.icon({
-  iconUrl: '../Pictures/mapimages/arunap.png',
-  iconSize: [62, 72]
-})
-
 // Define icons (icon mapping by name for dynamic selection)
 const iconMap = {
-  "Kalamkari art": L.icon({ iconUrl: '../pictures/mapimages/kalamk.png', iconSize: [120, 120] }),
-  "Bamboo & cane Toys": L.icon({ iconUrl: '../pictures/mapimages/arunap.png', iconSize: [62, 72] }),
-  "wooden toys & bamboo houses": L.icon({ iconUrl: '../pictures/mapimages/assamtoys.png', iconSize: [62, 72] }),
+  "Kalamkari art": L.icon({ iconUrl: '../Pictures/mapimages/kalamk.png', iconSize: [120, 120] }),
+  "Bamboo & Cane Toys": L.icon({ iconUrl: '../pictures/mapimages/arunap.png', iconSize: [62, 72] }),
+  "Wooden Toys & Bamboo Houses": L.icon({ iconUrl: '../pictures/mapimages/assamtoys.png', iconSize: [62, 72] }),
   "Madhubani Arts": L.icon({ iconUrl: '../pictures/mapimages/madhubani-br.png', iconSize: [92, 92] }),
-  "dholl": L.icon({ iconUrl: '../pictures/mapimages/dollguj.png', iconSize: [72, 92] }),
+  "Dholl": L.icon({ iconUrl: '../pictures/mapimages/dollguj.png', iconSize: [72, 92] }),
   "Kashmiri Arts": L.icon({ iconUrl: '../pictures/mapimages/kashmirarts.png', iconSize: [62, 72] }),
   "Yakshagana": L.icon({ iconUrl: '../pictures/mapimages/chitrakathi.png', iconSize: [152, 92] }),
   "Gond Paint": L.icon({ iconUrl: '../Pictures/mapimages/gondpain.png', iconSize: [102, 132] }),
   "Warli Art": L.icon({ iconUrl: '../pictures/mapimages/warli-icon.png', iconSize: [52, 52] }),
-  "manipuri folk dance": L.icon({ iconUrl: '../pictures/mapimages/manipur.png', iconSize: [62, 72] }),
+  "Manipuri Folk Dance": L.icon({ iconUrl: '../pictures/mapimages/manipur.png', iconSize: [62, 72] }),
   "Patachitra art": L.icon({ iconUrl: '../pictures/mapimages/pattachitra.png', iconSize: [92, 92] }),
   "Punjabi Bhangra": L.icon({ iconUrl: '../pictures/mapimages/punjab.png', iconSize: [72, 82] }),
   "Ghoomer": L.icon({ iconUrl: '../pictures/mapimages/phadraj.png', iconSize: [72, 92] }),
@@ -95,7 +30,6 @@ const iconMap = {
   "Kalighat": L.icon({ iconUrl: '../pictures/mapimages/kalighat.png', iconSize: [52, 52] }),
 };
 
-
 // Bind popups and assign icons dynamically
 function onEachFeature(feature, layer) {
   const props = feature.properties;
@@ -103,7 +37,8 @@ function onEachFeature(feature, layer) {
     <strong>${props.name}</strong><br>
     <em>Origin:</em> ${props.origin}<br>
     <em>Technique:</em> ${props.Technique}<br>
-    <em>Famous Artist(s):</em> ${props.FamousArtist}
+    <em>Famous Artist(s):</em> ${props.FamousArtist}<br>
+    <em>Famous Museum:</em> ${props.Mesuem}<br>
   `;
   layer.bindPopup(popupContent);
 }
@@ -166,9 +101,8 @@ function flyToStore(store) {
   <strong>${store.properties.name}</strong><br>
   <em>Origin:</em> ${store.properties.origin}<br>
   <em>Technique:</em> ${store.properties.Technique}<br>
-  <em>Famous Artist(s):</em> ${store.properties.FamousArtist}
+  <em>Famous Artist(s):</em> ${store.properties.FamousArtist}<br>
+  <em>Famous Museum:</em> ${store.properties.Museum}
 `)
   .openOn(map);
 }
-
-
